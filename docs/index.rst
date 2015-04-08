@@ -3,14 +3,27 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Installation et exploitation Centreon's documentation!
-=================================================================
+Bienvenue dans ma super doc: Installation et exploitation Centreon!
+===================================================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   Installation
+   Hotes
+   Services
+   Graph
+   Users
+   Acl
+   Moteur
+   Commandes
+   Script
+   Sauvegarde
+   User_MySQL
+   Save_conf_rout
+   A_faire
 
 
 Indices and tables
