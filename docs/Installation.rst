@@ -28,4 +28,38 @@ Donc voici nos différents comptes pour MySQL:
 	* centreon
 	* backup
 
+Client NTP
+-----------
+
+Sur le serveur, nous allons ajouter un client NTP pour que notre serveur soit à jour
+
+Il faudra éditer le fichier ``/etc/ntp.conf``:
+
+.. code-block:: bash
+
+	# vim /etc/ntp.conf
+
+Insérez le(s) nom(s) ou adresse(s) de votre serveur de temps dans ce fichier:
+
+.. code-block:: bash
+
+	# undisciplined local clock. This is a fake driver intended for backup and when no outside source of
+	# synchronized time is available
+	server 127.127.1.0 # local clock
+	fudge 127.127.1.0 stratum 10
+	server <TIMESERVERADORE>
+	server <TIMESERVERADORE>
+
+Redémarrer le service NTP:
+
+.. code-block:: bash
+
+	# /etc/init.d/ntpd restart
+
+Vérifiez la date du serveur:
+
+.. code-block:: bash
+
+	date
+
 
