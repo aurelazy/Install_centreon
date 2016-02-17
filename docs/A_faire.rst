@@ -8,7 +8,7 @@ Je le ferais au fur et à mesure de mon inspiration.
 	* Les traps
 	* Les events-handler
 	* Les pollers
-	* La haute-disponibilité
+	* `La haute-disponibilité <http://tuto-ha-centreon.rtfd.org>`_
 	* La réplication MySQL
 	* La création d'une commande
 	* Les fichiers de logs utiles 
